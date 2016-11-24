@@ -6,6 +6,9 @@
 
 (use-modules (ice-9 pretty-print))
 
+(define (pp x)
+  (pretty-print x))
+
 ;;; Helper Functions
 (define (walk-list lst func)
   (if (not (list? lst))
